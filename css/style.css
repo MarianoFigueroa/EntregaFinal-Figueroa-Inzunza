@@ -1,0 +1,144 @@
+*{
+    box-sizing: 0 ;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000020;
+    position: relative;
+    padding-bottom: 4em;
+    min-width: 100vh;
+}
+@font-face {
+    font-family:"aoboshioneregular";
+    src: url(../fonts/aoboshioneregular.ttf);
+}
+header {
+    display: flex;
+    display: inline;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+nav.navbar {
+    background-color: #171a4a;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+
+
+}
+.navbar ul {
+    text-align: end;
+    font-size: 25px
+
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 70px;
+    display: inline;
+    width: auto;
+
+}
+.navbar ul li a {
+    color: rgb(255, 255, 255);
+    font-family: aoboshioneregular;
+    width: auto;
+    padding: 10px;
+    display: inline-block;
+    
+}
+img.banner2 {
+    margin-inline: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+
+}
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 600px repeat(2, 1fr);
+    grid-template-areas: 
+    "g1 g1"
+    "g3 g2";
+    margin: 10px auto;
+    width: 80%;
+    height: auto; 
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.grid2 {
+    background-color: rgb(48, 36, 116);
+    text-align: center;
+    height: auto;
+    border: 1px solid white
+}
+.g1 {
+    grid-area: g1;
+
+}
+.g2 {
+    grid-area: g2;
+
+}
+.foto1 {
+    width: 50%;
+    margin: 10px;
+}
+table {
+    table-layout: fixed;
+    margin: auto;
+    border-collapse: collapse;
+    border: 3px solid black;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+.g3 {
+    grid-area: g3;
+}
+footer {
+    background-color:  #171a4a;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 1em 0;
+    margin-top: auto ;
+    bottom: 0 auto;
+    position: absolute;
+    display: inline-block;
+}
+.pie-pagina a {
+    color: rgb(255, 255, 255);
+    width: auto;
+    padding: 10;
+    font-size: 2rem;
+    margin: 40px;
+}
+section.caja-mayor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600;
+    width: 100%;
+    padding: auto;
+    background-color: #000020;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.caja-menor {
+    font-weight: 500;
+    height: 600px;
+    width: 500px;
+    background-color:blue; /* color orientacion */
+    border: 5px solid white;
+    border-radius: 5px;
+}
+section.seccioncontacto {
+    color: white;
+}
