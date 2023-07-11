@@ -6,7 +6,11 @@
 body {
     background-color: #000020;
     position: relative;
+<<<<<<< HEAD
     padding-bottom: 2em;
+=======
+    padding-bottom: 4em;
+>>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
     min-width: 100vh;
 }
 @font-face {
@@ -49,6 +53,7 @@ nav.navbar {
     display: inline-block;
     
 }
+<<<<<<< HEAD
 #checkbox-menu, label.menu {
     display: none;
 }
@@ -72,6 +77,8 @@ label.menu {
     
 } 
 
+=======
+>>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 img.banner2 {
     margin-inline: 0;
     display: block;
@@ -96,8 +103,12 @@ img.banner2 {
     background-color: rgb(48, 36, 116);
     text-align: center;
     height: auto;
+<<<<<<< HEAD
     border: 1px solid white;
     color: black;
+=======
+    border: 1px solid white
+>>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 }
 .g1 {
     grid-area: g1;
@@ -111,21 +122,33 @@ img.banner2 {
     width: 50%;
     margin: 10px;
 }
+<<<<<<< HEAD
 .tabla-resumen {
+=======
+table {
+>>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
     table-layout: fixed;
     margin: auto;
     border-collapse: collapse;
     border: 3px solid black;
+<<<<<<< HEAD
     color:black ;
   }
 .tabla-resumen th, td {
     padding: 5px;
     border: 1px solid rgb(0, 0, 0);
+=======
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid black;
+>>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
   }
 
 .g3 {
     grid-area: g3;
 }
+<<<<<<< HEAD
 .caja-index {
     display: flex;
     border: 1px solid black;
@@ -134,6 +157,8 @@ img.banner2 {
     margin: 15px auto;
 
 }
+=======
+>>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 footer {
     background-color:  #171a4a;
     text-align: center;
@@ -152,6 +177,7 @@ footer {
     font-size: 2rem;
     margin: 40px;
 }
+<<<<<<< HEAD
 @media (min-width:600px) and (max-width:768){
 
 }
@@ -172,6 +198,8 @@ footer {
 
 }
 
+=======
+>>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 section.caja-mayor {
     display: flex;
     flex-direction: row;
@@ -184,7 +212,10 @@ section.caja-mayor {
     justify-content: space-evenly;
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 .caja-menor {
     font-weight: 500;
     height: 600px;
@@ -194,6 +225,7 @@ section.caja-mayor {
     border-radius: 5px;
 }
 section.seccioncontacto {
+<<<<<<< HEAD
     color: white; 
 }
 .titulo-comunidad {
@@ -209,3 +241,7 @@ p.texto-comunidad {
 }
 
 
+=======
+    color: white;
+}
+>>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
