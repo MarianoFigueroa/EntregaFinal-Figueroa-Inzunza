@@ -1,0 +1,15 @@
+@mixin encabezados ($tamanio) {
+    h1 {
+        font-size: $tamanio;
+    }
+    h2 {
+        font-size: $tamanio - 0.4;
+    }
+    h3 {
+        font-size: $tamanio - 0.6;
+    }
+    h4 {
+        font-size: $tamanio - 1;
+    }
+    
+}

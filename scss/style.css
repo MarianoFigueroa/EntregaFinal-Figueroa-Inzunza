@@ -1,0 +1,267 @@
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #000020;
+}
+
+@font-face {
+  font-family: "aoboshioneregular";
+  src: url(../fonts/aoboshioneregular.ttf);
+}
+.header-contenedor {
+  width: 100%;
+}
+
+header {
+  background-color: #171a4a;
+  padding: 20px;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  list-style: none;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: rgb(255, 255, 255);
+  font-family: aoboshioneregular;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+#checkbox-menu, label.menu {
+  display: none;
+}
+
+label.menu {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    font-size: 18px;
+  }
+  .navbar ul li {
+    padding: 30px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  label.menu {
+    display: block;
+    margin-left: 10px;
+  }
+  #checkbox-menu:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #171a4a;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid1 {
+    grid-template-areas: "g1" "g2" "g3";
+  }
+  .navbar {
+    justify-content: space-around;
+  }
+  .banner {
+    display: none;
+  }
+}
+
+img.banner2 {
+  margin-inline: 0;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  grid-template-areas: "g1 g1" "g3 g2";
+  margin: 10px auto;
+  width: 80%;
+  height: auto;
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.grid2 {
+  background-color: rgb(48, 36, 116);
+  text-align: center;
+  height: auto;
+  border: 1px solid white;
+  color: black;
+}
+
+.g1 {
+  grid-area: g1;
+}
+
+.g2 {
+  grid-area: g2;
+}
+
+.g3 {
+  grid-area: g3;
+}
+
+.foto1 {
+  width: 50%;
+  margin: 10px;
+}
+
+.tabla-resumen {
+  table-layout: fixed;
+  margin: auto;
+  border-collapse: collapse;
+  border: 3px solid black;
+  color: black;
+}
+
+.tabla-resumen th, td {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+th, td {
+  padding: 10px;
+}
+
+.caja-index {
+  display: flex;
+  border: 1px solid black;
+  height: 300px;
+  width: 80%;
+  margin: 15px auto;
+}
+
+footer {
+  background-color: #171a4a;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 1em 0;
+  margin-top: auto;
+  bottom: 0 auto;
+  position: absolute;
+  display: inline-block;
+}
+
+.pie-pagina a {
+  color: rgb(255, 255, 255);
+  width: auto;
+  padding: 10;
+  font-size: 2rem;
+  margin: 40px;
+}
+
+section.caja-mayor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 600;
+  width: 100%;
+  padding: auto;
+  background-color: #000020;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.caja-menor {
+  font-weight: 500;
+  height: 600px;
+  width: 500px;
+  background-color: #171a4a; /* color orientacion */
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+.caja-menor img.evento1 {
+  width: 50%;
+  margin: 10px;
+}
+.caja-menor img.evento2 {
+  margin: 10px;
+  width: 55%;
+}
+.caja-menor img.evento3 {
+  width: 35%;
+  margin: 10px;
+}
+.caja-menor img.evento4 {
+  margin: 10px;
+}
+.caja-menor img.evento5 {
+  width: 60%;
+  margin: 10px;
+}
+.caja-menor h1.t-eventoo {
+  color: aqua;
+}
+.caja-menor p.p-evento {
+  color: aquamarine;
+}
+
+section.seccioncontacto {
+  color: white;
+}
+
+.titulo-comunidad {
+  text-align: center;
+  color: black;
+}
+
+p.texto-comunidad {
+  margin: 20px;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 35px;
+
+}
+section.expositor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  object-fit: cover;
+
+}
+.galeria-foto {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+$modo-noche: true;
+
+@if $modo-noche {
+    $color-fondo: #1a1a1a;
+  } 
+  else  {
+    $color-fondo: #ffffff;
+}
+body {
+    background-color: $color-fondo;
+}

@@ -1,8 +1,9 @@
-*{
-    box-sizing: 0 ;
-    margin: 0;
-    padding: 0;
-}
+@import "variables";
+@import "reset";
+@import "condiciones";
+@import "mixins"; 
+
+@include encabezados (2rem);
 body {
     background-color: #000020;
 }
@@ -21,6 +22,7 @@ header {
 nav.navbar {
    display: flex;
    justify-content: flex-end;
+
 }
 .navbar ul {
     list-style: none;
@@ -49,7 +51,8 @@ label.menu {
     color: white;
     cursor: pointer;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 600px) /*lo pase a  "_queries" y se me rompió todo, ahora no me anda al pasarlo de nuevo a css */ {
     .navbar ul {
         font-size: 18px;
       }
@@ -64,7 +67,7 @@ label.menu {
         display: block;
         margin-left: 10px;
     }
-    #checkbox-menu:checked ~ ul {
+    #checkbox-menu:checked ~ ul{
         display: flex;
         flex-direction: column;
         background-color: #171a4a;
@@ -72,10 +75,9 @@ label.menu {
         top: 100%;
         width: 100%;
       }
-    
-} 
-
-img.banner2 {
+}
+ 
+ img.banner2 {
     margin-inline: 0;
     display: block;
     width: 100%;
@@ -114,6 +116,9 @@ img.banner2 {
     grid-area: g3;
 
 }
+@media (min-width:600px) and (max-width:768){
+
+}
 .foto1 {
     width: 50%;
     margin: 10px;
@@ -139,6 +144,22 @@ img.banner2 {
     margin: 15px auto;
 
 }
+@media screen and (max-width:480px) {
+    .grid1 {
+        grid-template-areas: 
+        "g1"
+        "g2"
+        "g3";
+    }
+    .navbar {
+        justify-content: space-around;
+
+    }
+    .banner {
+        display: none;
+     }
+
+}
 footer {
     background-color:  #171a4a;
     text-align: center;
@@ -156,25 +177,6 @@ footer {
     padding: 10;
     font-size: 2rem;
     margin: 40px;
-}
-@media (min-width:600px) and (max-width:768){
-
-}
-@media screen and (max-width:480px) {
-    .grid1 {
-        grid-template-areas: 
-        "g1"
-        "g2"
-        "g3";
-    }
-    .navbar {
-        justify-content: space-around;
-
-    }
-    .banner {
-        display: none;
-     }
-
 }
 
 section.caja-mayor {
@@ -195,9 +197,42 @@ section.caja-mayor {
     height: 600px;
     width: 500px;
     background-color:#171a4a; /* color orientacion */
-    border: 5px solid white;
+    border: 2px solid white;
     border-radius: 5px;
+    text-align: center;
+    img.evento1 {
+        width: 50%;
+        margin: 10px;
+        
+    } 
+    img.evento2 {
+        margin: 10px;
+        width: 55%;
+        
+    }
+    img.evento3 {
+        width: 35%;
+        margin: 10px;
+    }
+    img.evento4 {
+        margin: 10px;
+        
+    }
+    img.evento5 {
+        width: 60%;
+        margin: 10px;
+        
+    }
+   
+    h1.t-eventoo  {
+        color: aqua;
+    }
+    p.p-evento {
+        color: aquamarine;
+    }
+
 }
+
 section.seccioncontacto {
     color: white; 
 }
@@ -212,3 +247,27 @@ p.texto-comunidad {
     color: white;
     border: 1px solid white;
 }
+p {
+    font-size: $fontSizeNormal;
+}
+h1 {
+    font-size: $h-1;
+}
+section.expositor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    object-fit: cover;
+  
+  }
+  .galeria-foto {
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+  
+  }
+
+
+@import "queries";
+@import "bucles";
