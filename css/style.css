@@ -5,80 +5,76 @@
 }
 body {
     background-color: #000020;
-    position: relative;
-<<<<<<< HEAD
-    padding-bottom: 2em;
-=======
-    padding-bottom: 4em;
->>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
-    min-width: 100vh;
 }
 @font-face {
     font-family:"aoboshioneregular";
     src: url(../fonts/aoboshioneregular.ttf);
 }
-header {
-    display: flex;
-    display: inline;
-    flex-wrap: wrap;
+.header-contenedor {
     width: 100%;
-    
 }
-nav.navbar {
+header {
     background-color: #171a4a;
     padding: 20px;
-    position: sticky;
-    top: 0;
+}
 
-
+nav.navbar {
+   display: flex;
+   justify-content: flex-end;
 }
 .navbar ul {
-    text-align: end;
-    font-size: 25px
-
+    list-style: none;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar ul li {
-    list-style: none;
-    padding: 70px;
     display: inline;
-    width: auto;
-
 }
+
 .navbar ul li a {
     color: rgb(255, 255, 255);
     font-family: aoboshioneregular;
-    width: auto;
+    text-decoration: none;
     padding: 10px;
     display: inline-block;
     
 }
-<<<<<<< HEAD
 #checkbox-menu, label.menu {
     display: none;
 }
 label.menu {
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
 @media screen and (max-width: 600px) {
     .navbar ul {
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-    }
+        font-size: 18px;
+      }
+    
+      .navbar ul li {
+        padding: 30px;
+      }
+      .navbar ul {
+        display: none;
+      }
     label.menu {
         display: block;
         margin-left: 10px;
     }
     #checkbox-menu:checked ~ ul {
-        display: block;
-    }
+        display: flex;
+        flex-direction: column;
+        background-color: #171a4a;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+      }
     
 } 
 
-=======
->>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 img.banner2 {
     margin-inline: 0;
     display: block;
@@ -88,8 +84,8 @@ img.banner2 {
 }
 .grid1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 600px repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
     grid-template-areas: 
     "g1 g1"
     "g3 g2";
@@ -103,12 +99,8 @@ img.banner2 {
     background-color: rgb(48, 36, 116);
     text-align: center;
     height: auto;
-<<<<<<< HEAD
     border: 1px solid white;
     color: black;
-=======
-    border: 1px solid white
->>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 }
 .g1 {
     grid-area: g1;
@@ -118,37 +110,27 @@ img.banner2 {
     grid-area: g2;
 
 }
+.g3 {
+    grid-area: g3;
+
+}
 .foto1 {
     width: 50%;
     margin: 10px;
 }
-<<<<<<< HEAD
 .tabla-resumen {
-=======
-table {
->>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
     table-layout: fixed;
     margin: auto;
     border-collapse: collapse;
     border: 3px solid black;
-<<<<<<< HEAD
     color:black ;
   }
 .tabla-resumen th, td {
-    padding: 5px;
     border: 1px solid rgb(0, 0, 0);
-=======
   }
   th, td {
     padding: 10px;
-    border: 1px solid black;
->>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
-  }
-
-.g3 {
-    grid-area: g3;
 }
-<<<<<<< HEAD
 .caja-index {
     display: flex;
     border: 1px solid black;
@@ -157,8 +139,6 @@ table {
     margin: 15px auto;
 
 }
-=======
->>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 footer {
     background-color:  #171a4a;
     text-align: center;
@@ -177,7 +157,6 @@ footer {
     font-size: 2rem;
     margin: 40px;
 }
-<<<<<<< HEAD
 @media (min-width:600px) and (max-width:768){
 
 }
@@ -198,8 +177,6 @@ footer {
 
 }
 
-=======
->>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 section.caja-mayor {
     display: flex;
     flex-direction: row;
@@ -212,20 +189,16 @@ section.caja-mayor {
     justify-content: space-evenly;
 
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
 .caja-menor {
     font-weight: 500;
     height: 600px;
     width: 500px;
-    background-color:blue; /* color orientacion */
+    background-color:#171a4a; /* color orientacion */
     border: 5px solid white;
     border-radius: 5px;
 }
 section.seccioncontacto {
-<<<<<<< HEAD
     color: white; 
 }
 .titulo-comunidad {
@@ -239,9 +212,3 @@ p.texto-comunidad {
     color: white;
     border: 1px solid white;
 }
-
-
-=======
-    color: white;
-}
->>>>>>> 94564b105c32f8b0b826f5f09f8f01c36ab99105
