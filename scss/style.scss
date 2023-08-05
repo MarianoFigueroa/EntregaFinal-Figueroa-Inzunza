@@ -1,7 +1,8 @@
 @import "variables";
 @import "reset";
 @import "condiciones";
-@import "mixins"; 
+@import "mixins";
+
 
 @include encabezados (2rem);
 body {
@@ -97,6 +98,11 @@ label.menu {
     row-gap: 10px;
     column-gap: 10px;
 }
+h1 {
+    color: aqua;
+    
+  }
+
 .grid2 {
     background-color: rgb(48, 36, 116);
     text-align: center;
@@ -261,11 +267,12 @@ section.expositor {
     object-fit: cover;
   
   }
-  .galeria-foto {
-    width: 400px;
-    height: 400px;
-    margin: 10px;
+.gallery {
+    width: 100%;
+  }
   
+  p {
+    text-indent: 3px;
   }
 
 

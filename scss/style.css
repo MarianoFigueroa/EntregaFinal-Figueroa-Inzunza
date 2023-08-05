@@ -13,6 +13,18 @@ body {
   font-family: "aoboshioneregular";
   src: url(../fonts/aoboshioneregular.ttf);
 }
+@font-face {
+  font-family: "anton-regular";
+  src: url(../fonts/Anton-Regular.ttf);
+}
+@font-face {
+  font-family: "comfortaa";
+  src: url(../fonts/comfortaa.ttf);
+}
+@font-face {
+  font-family: "asap";
+  src: url(../fonts/asap.ttf);
+}
 .header-contenedor {
   width: 100%;
 }
@@ -40,7 +52,7 @@ nav.navbar {
 
 .navbar ul li a {
   color: rgb(255, 255, 255);
-  font-family: aoboshioneregular;
+  font-family: "aoboshioneregular";
   text-decoration: none;
   padding: 10px;
   display: inline-block;
@@ -79,9 +91,7 @@ label.menu {
   }
 }
 @media screen and (max-width: 480px) {
-  .grid1 {
-    grid-template-areas: "g1" "g2" "g3";
-  }
+
   .navbar {
     justify-content: space-around;
   }
@@ -89,6 +99,15 @@ label.menu {
     display: none;
   }
 }
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .pie-pagina {
+    font-size: 1.2rem;
+  }
+}
+
 
 img.banner2 {
   margin-inline: 0;
@@ -99,23 +118,28 @@ img.banner2 {
 
 .grid1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "g1 g1" "g3 g2";
   margin: 10px auto;
   width: 80%;
   height: auto;
   row-gap: 10px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+
+  column-gap: 10px;
+}
+
+h1 {
+  color: #CCCCCC;
+  font-family: "anton-regular";
+  
 }
 
 .grid2 {
-  background-color: rgb(48, 36, 116);
+  background-color: #171a4a;
   text-align: center;
   height: auto;
   border: 1px solid white;
-  color: black;
+  color: #CCCCCC;
 }
 
 .g1 {
@@ -130,9 +154,19 @@ img.banner2 {
   grid-area: g3;
 }
 
+@media screen and (max-width: 600px) {
+  .grid1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "g1"
+      "g2"
+      "g3";
+  }
+}
+
 .foto1 {
   width: 50%;
-  margin: 10px;
+  margin: 20px;
 }
 
 .tabla-resumen {
@@ -140,7 +174,7 @@ img.banner2 {
   margin: auto;
   border-collapse: collapse;
   border: 3px solid black;
-  color: black;
+  color: #CCCCCC;
 }
 
 .tabla-resumen th, td {
@@ -164,19 +198,25 @@ footer {
   text-align: center;
   position: relative;
   width: 100%;
-  padding: 1em 0;
-  margin-top: auto;
-  bottom: 0 auto;
+  padding: 4px 0;
+
   position: absolute;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.pie-pagina {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  justify-content: center;
 }
 
 .pie-pagina a {
   color: rgb(255, 255, 255);
-  width: auto;
-  padding: 10;
+  margin: 0 10px;
   font-size: 2rem;
-  margin: 40px;
+
 }
 
 section.caja-mayor {
@@ -193,9 +233,9 @@ section.caja-mayor {
 
 .caja-menor {
   font-weight: 500;
-  height: 600px;
+  height: 650px;
   width: 500px;
-  background-color: #171a4a; /* color orientacion */
+  background-color: #171a4a;
   border: 2px solid white;
   border-radius: 5px;
   text-align: center;
@@ -220,38 +260,103 @@ section.caja-mayor {
   margin: 10px;
 }
 .caja-menor h1.t-eventoo {
-  color: aqua;
+  color: rgb(36, 116, 109);
 }
 .caja-menor p.p-evento {
-  color: aquamarine;
+  color:    rgb(255, 255, 255);
 }
-
+.titulo-contenedor{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.contacto-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 section.seccioncontacto {
+  width: 800px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   color: white;
 }
+.contacto1 {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+input[type="text"], textarea  {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 
+ }
+button {
+  padding: 6px 10px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+.caja-comunidad{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap
+
+}
 .titulo-comunidad {
   text-align: center;
-  color: black;
+  color: #CCCCCC;
 }
 
 p.texto-comunidad {
-  margin: 20px;
-  text-align: center;
-  color: white;
+
   border: 1px solid white;
+  color: #CCCCCC;
+  background-color: #171a4a;
 }
+.memes {
+  width: auto;
+  height: 350px;
+  margin: 5px;
+}
+
+.gallery3 .memes3 {
+  width: 600px;
+  height: 410px;
+  margin: 5px;
+
+}
+.gallery2 .memes2 {
+  width: auto;
+  height: 410px;
+  margin: 5px;
+}
+
 
 p {
   font-size: 1.2rem;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 40px;
 
 }
+.titulo-imagenes {
+  text-align: center;
+  margin: 20px;
+
+}
+
 section.expositor {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 10px;
@@ -264,4 +369,31 @@ section.expositor {
   margin: 10px;
 
 }
+
+.galeria-foto2 {
+  width: 400px;
+  height: 550px;
+  margin: 10px;
+
+}
+.galeria-foto3 {
+  width: 400px;
+  height: 550px;
+  margin: 10px;
+
+}
+h3 {
+  color: #CCCCCC;
+  font-family: anton-regular;
+}
+.img-videos {
+  width: 600px;
+  height: 400px;
+  margin: 5px;
+}
+p {
+  text-indent: 3px;
+  font-family: "asap";
+}
+
 /*# sourceMappingURL=style.css.map */
